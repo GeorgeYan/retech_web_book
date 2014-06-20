@@ -1,0 +1,6 @@
+Recaptcha.configure do |config|
+  config.public_key = '6LcSYPUSAAAAAACbqmVeG-f_2X84KcFtOwmTU_m6'
+  config.private_key = '6LcSYPUSAAAAAJLaGLUuZBEGf9ArmreWhBz1CMR6'
+  config.proxy = 'http://www.google.com/recaptcha/api/verify'
+  #config.proxy = 'http://localhost:3000'
+end

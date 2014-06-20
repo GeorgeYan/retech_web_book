@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Retech_Web_Book</title>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
+</head>
+<body ng-app="retech_web_book">
+<div class="container">
+  <%= render "layouts/navigation" %>
+  <%= render "layouts/flash" %>
+  <%= yield %>
+</div>
+
+</body>
+</html>

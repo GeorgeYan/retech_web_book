@@ -1,0 +1,13 @@
+<div ng-init="init()">
+  <div ng-repeat="user in lists.entries">
+    <p>id: {{user.id}}</p>
+    <p>username: {{user.username}}</p>
+    <p>email: {{user.email}}</p>
+    <hr>
+  </div>
+
+  <pagination boundary-links="true" ng-click="pageChanged()"total-items="lists.total_entries" items-per-page="per_page" page="lists.current_page" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;">
+  </pagination>
+  <pre>The selected page no: {{lists.current_page}}</pre>
+
+</div>
